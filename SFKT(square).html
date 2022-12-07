@@ -1,0 +1,26 @@
+<html>
+  <head><title>java</title>
+    <script language="JavaScript">
+     function showsquare()
+      {
+        var num,ans;
+        num=document.frmsquare.txtnum.value;
+        ans=num * num;
+        document.frmsquare.txtsqr.value=ans;
+      }
+     </script>
+   </head>
+    <body bgcolor="red">
+      <form Name="frmsquare">
+       <center>
+         Enter a number
+         <input type="text" name="txtnum" size="5">
+         <br><br>
+         square is
+         <input type="text" name="txtsqr" size="5">
+         <br><br>
+         <input type="button" value="show" onClick="showsquare()">
+       </center>
+      </form>
+    </body>
+ </html>

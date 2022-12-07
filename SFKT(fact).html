@@ -1,0 +1,31 @@
+<html>
+  <head><title>fact</title>
+   <script Language="JavaScript">
+    function showfact()
+       {
+         var n,i,fact=1;
+         n=Number(document.frmfact.txtnum.value);
+         if(isNaN(n))
+           {
+             alert("TRY AGAIN");
+             return;
+           }
+         for(i=1;i<=n;i++)
+         fact=fact*i;
+         document.frmfact.txtans.value=fact;
+        }
+    </script>
+   </head>
+    <body bgcolor="cyan">
+     <form Name="frmfact">
+       Enter a Number&nbsp;
+       <input type="text"name="txtnum"><br><br>
+       THE FACTORIAL
+       <input type="text"name="txtans"><br><br>
+       <center>
+        <input type="button"value="show"onClick="showfact()"><br><br><br><br><br><br><br><br><br><br>
+       </center>
+     </form>
+     BY<br><marquee><font color="red">SFKT</font></marquee>
+    </body>
+</html>        
